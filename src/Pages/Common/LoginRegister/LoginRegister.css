@@ -1,0 +1,109 @@
+.loginRegisterBg {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../img/LoginRegister/bg.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.loginRegisterBgOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    background-image: radial-gradient(farthest-corner at 40px 40px, transparent 0%, var(--bg) 70%);
+    transform: rotate(180deg);
+}
+
+.loginRegisterBgOverlayDark {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background-color: var(--bg);
+}
+.loginRegisterContent{
+   position: relative;
+   height: 100vh;
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.loginRegisterContent h1{
+    color: var(--white);
+    text-transform: capitalize;
+    font-family: semibold;
+    margin-bottom: 3rem;
+}
+.loginRegisterForm input{
+    background-color: transparent;
+    color: var(--white) !important;
+    border-radius: 0;
+}
+
+.loginRegisterForm label{
+    color: var(--white);
+    font-family: regular;
+}
+.loginRegisterForm.forgetPassword{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.loginRegisterForm.forgetPassword a{
+    color: var(--white);
+    font-size: 14px;
+}
+.loginRegisterForm button{
+    width: 100%;
+    padding: 18px;
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 50px;
+    border: none;
+    margin: 1rem 0 0 0;
+}
+.loginRegisterForm.divider{
+    width: 100%;
+    height: 1px;
+    background-color: var(--white);
+    margin: 4rem 0;
+    position: relative;
+}
+.loginRegisterForm.divider::after{
+    position: absolute;
+    content: 'or';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loginRegisterForm.google{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    color: var(--white);
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginRegisterForm.google img{
+    max-width: 30px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
