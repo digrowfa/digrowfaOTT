@@ -2,6 +2,7 @@ import React, { createContext, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from '../Pages/Common/Home'
 import Login from '../Pages/Common/LoginRegister/Login'
+import Register from '../Pages/Common/LoginRegister/Register'
 
 
 export const ThemeContext = createContext(null)
@@ -22,6 +23,7 @@ const Routers = () => {
 
                         <Route path='/' element={<Home />} />
                         <Route path='/login' element={<Login />} />
+                        <Route path='/register' element={<Register />} />
 
                         {/* =========end========== */}
 
