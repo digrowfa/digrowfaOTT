@@ -8,6 +8,7 @@
 body {
   overflow-x: hidden;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -62,19 +63,113 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 input:focus,
 input:active,
 select:focus,
 select:active,
 textarea:focus,
-textarea:active
-{
-  outline:0px !important;
-    -webkit-appearance:none;
-    box-shadow: none !important;
-    background-color: transparent !important;
+textarea:active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  background-color: transparent !important;
 }
 
-button:focus{
+button:focus {
   box-shadow: none !important;
+}
+
+#dark {
+  background-color: black;
+}
+
+.themeColor {
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* width */
+.themeColor::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.themeColor::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.themeColor::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+#dark {
+  background-color: var(--bg);
+}
+
+#light {
+  background-color: var(--white);
+}
+
+.themeSwitch label {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.themeSwitch .react-switch-bg {
+  background-color: #e5e3e8 !important;
+  box-shadow: 0 0 0 2px rgb(150 144 162 / 15%) inset;
+  position: relative;
+  overflow: hidden;
+}
+
+.themeSwitch .react-switch-bg::after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 100%;
+  right: 0;
+  background-image: url('./img/icons/moonDark.png');
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.themeSwitch .react-switch-bg::before {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 100%;
+  left: 0;
+  background-image: url('./img/icons/sunLight.png');
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.themeSwitch .react-switch-handle {
+  box-shadow: 1px 1px 6px rgb(17 16 19 / 20%) !important;
+  background-color: var(--white) !important;
+}
+
+.themeSwitch .react-switch-handle {
+  background-size: 25px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+#light .themeSwitch .react-switch-handle {
+  background-image: url('./img/icons/sun.png') !important;
+}
+
+#dark .themeSwitch .react-switch-handle {
+  background-image: url('./img/icons/moon.png') !important;
+  background-color: #4a4653 !important;
+}
+
+#dark .themeSwitch .react-switch-bg {
+  background-color: rgba(40, 37, 44, .95) !important;
 }
