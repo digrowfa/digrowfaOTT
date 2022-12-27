@@ -1,0 +1,33 @@
+#dark .loginRegisterBgOverlayDark {
+    background-color: var(--bg);
+}
+
+#dark .loginRegisterBgOverlay {
+    background-image: radial-gradient(farthest-corner at 40px 40px, transparent 0%, var(--bg) 70%);
+}
+
+#dark .loginRegisterContent h1 {
+    color: var(--white);
+}
+
+#dark .loginRegisterForm input {
+    color: var(--white) !important;
+}
+
+#dark .loginRegisterForm label {
+    color: var(--white);
+}
+
+#dark .loginRegisterForm.divider {
+    background-color: var(--white);
+}
+
+#dark .loginRegisterForm.divider::after {
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+#dark .loginRegisterForm.google {
+    color: var(--white);
+    border: 1px solid var(--white);
+}

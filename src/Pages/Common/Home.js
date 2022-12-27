@@ -1,9 +1,10 @@
 import React from 'react'
+import Navigation from './Includes/Navigation/Navigation'
 
 const Home = () => {
   return (
     <div>
-        Home
+        <Navigation />
     </div>
   )
 }

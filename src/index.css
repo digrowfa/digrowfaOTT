@@ -92,7 +92,7 @@ button:focus {
 
 /* width */
 .themeColor::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
 }
 
 /* Track */
@@ -138,6 +138,7 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .themeSwitch .react-switch-bg::before {
   position: absolute;
   content: '';
@@ -172,4 +173,16 @@ button:focus {
 
 #dark .themeSwitch .react-switch-bg {
   background-color: rgba(40, 37, 44, .95) !important;
+}
+
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1680px !important;
+  }
 }

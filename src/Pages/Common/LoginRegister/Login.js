@@ -1,11 +1,14 @@
 import React from 'react'
 import './LoginRegister.css'
+import './LoginRegisterDark.css'
 import { Link } from 'react-router-dom'
 import google from '../../../img/LoginRegister/google.png'
+import Navigation from '../Includes/Navigation/Navigation'
 
 const Login = () => {
     return (
         <>
+            <Navigation />
             <section className='container-fluid p-0'>
                 <div className='loginRegisterBg'>
                     <div className='loginRegisterBgOverlay'></div>
